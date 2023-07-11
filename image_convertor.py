@@ -1,3 +1,5 @@
+from colorama import Fore, Back, Style
+
 import os
 import sys
 from PIL import Image
@@ -5,10 +7,24 @@ from PIL import Image
 
 # I will be assuming I am only inputting image file for now
 def main():
+    intro()
+
     path = path_input()
     # print(os.listdir(sys.argv[1]))
     # convertor(filepath, ext)
     # sys.argv[0]
+
+def intro():
+    print(Fore.RED+"   ****************  **************               WELCOME TO IMAGE CONVERTOR!!")
+    print(Fore.RED+"     *************  ************                                                                       ")
+    print(Fore.RED+"        ******       *********                                                               ")
+    print(Fore.RED+"         ****        ******            This is in testing phase therefore it only works to convert jpg to png")
+    print(Fore.RED+"         ****        ******                                                                        ")
+    print(Fore.BLUE+"         ****        ******             Convert all the images in a folder to a desired extension")
+    print(Fore.BLUE+"         ****        ******                  ")
+    print(Fore.BLUE+"        ******       *********   ")
+    print(Fore.BLUE+"   ****************  ************   ")
+    print(Fore.BLUE+"   ****************  **************   ")
 
 def path_input():
 
